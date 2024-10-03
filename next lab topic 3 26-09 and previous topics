@@ -1,4 +1,23 @@
-1)	Creating and calling method
+ACCESS MODIFIERS   ------------------------------->(3/10/2024)
+1) Class :-    /(done and uploaded)/(not able to call default packages from outside of packages)
+    -public
+    -default (package)
+2) Attributes and Methods    /(not done , do this at PC for next practice lab)/
+    -Public
+    -private
+    -Protected (Inheritance)
+    -default (Packages)
+3) Access non-modifires
+    Class - 
+        -final                }
+                                } inheritance
+        -abstract             }   
+4) Attributes, Methods - 
+    - final
+    - Static
+    - abstract
+______________________________________________________________________________________________________________________
+1)	Creating and calling method    ---------------------------------->(26/09/2024)
 
 public class meth {
     static void myMethod() {
