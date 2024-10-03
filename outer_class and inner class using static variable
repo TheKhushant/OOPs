@@ -1,0 +1,41 @@
+class OuterClass {
+
+	private static String msg = "ONLY Outer class STATIC VARIABLE member";
+
+	public static class NestedStaticClass {
+		public void printMessage()
+		{
+
+			System.out.println("STATIC C : outer nested static class: " + msg);
+		}
+	}
+	public class InnerClass {
+		public void display()
+		{
+			System.out.println("NON STATIC C non-static nested class println "+ msg);
+		}
+	}
+}
+class GFG {
+
+	public static void main(String args[])
+	{
+		System.out.println("1");
+		OuterClass.NestedStaticClass printer = new OuterClass.NestedStaticClass();
+		System.out.println("2");
+		printer.printMessage();
+		System.out.println("3");
+		System.out.println("4");
+		OuterClass outer = new OuterClass(); // Outer class instance to create non-static nested class
+		System.out.println("5");
+		OuterClass.InnerClass inner	= outer.new InnerClass();
+		System.out.println("6");
+		inner.display();
+		System.out.println("7");
+		OuterClass.InnerClass innerObject = new OuterClass().new InnerClass(); //uppar ki step single line me
+		System.out.println("8");
+
+		innerObject.display();
+		System.out.println("9");
+	}
+}
