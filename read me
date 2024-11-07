@@ -46,3 +46,6 @@ public class meth {
         ii.	Private
         iii.	Defualt
         iv.	Procteded
+________________________________________________________________________________________________________________________________(07/11/2024)
+1) Overriding with Any Inheritance (
+2) use of Supper Class (use = call member of its parent calls not the main parent only above of it class)
